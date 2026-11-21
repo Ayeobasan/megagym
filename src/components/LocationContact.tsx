@@ -17,9 +17,9 @@ export default function LocationContact() {
   };
 
   return (
-    <section id="contact" className="py-24 bg-[#0c0c0c] relative border-t border-[#222222]">
+    <section id="contact" className="py-24 bg-[#0c0c0c] relative border-t border-[#222222] overflow-hidden w-full max-w-full">
       {/* Background radial accent */}
-      <div className="absolute bottom-0 left-10 w-96 h-96 bg-[#E5392F]/10 rounded-full blur-[140px] pointer-events-none" />
+      <div className="absolute bottom-0 left-10 w-96 h-96 bg-[#E5392F]/10 rounded-full blur-[140px] pointer-events-none max-w-full" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         {/* Section Header */}

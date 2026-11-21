@@ -18,7 +18,7 @@ export default function Gallery() {
       : GALLERY_IMAGES.filter((img) => img.category === activeCategory);
 
   return (
-    <section id="gallery" className="py-24 bg-[#080808] relative">
+    <section id="gallery" className="py-24 bg-[#080808] relative overflow-hidden w-full max-w-full">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-10">

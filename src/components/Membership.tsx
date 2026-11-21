@@ -7,9 +7,9 @@ import { PRICING_PLANS, GYM_INFO } from "@/data/gymData";
 
 export default function Membership() {
   return (
-    <section id="membership" className="py-24 bg-[#080808] relative">
+    <section id="membership" className="py-24 bg-[#080808] relative overflow-hidden w-full max-w-full">
       {/* Ambient background glow */}
-      <div className="absolute top-1/3 left-1/2 -translate-x-1/2 w-[600px] h-[400px] bg-[#E5392F]/15 blur-[160px] pointer-events-none" />
+      <div className="absolute top-1/3 left-1/2 -translate-x-1/2 w-[600px] max-w-full h-[400px] bg-[#E5392F]/15 blur-[160px] pointer-events-none" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         {/* Section Header */}

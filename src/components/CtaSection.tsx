@@ -5,7 +5,7 @@ import { GYM_INFO } from "@/data/gymData";
 
 export default function CtaSection() {
   return (
-    <section className="py-28 bg-[#0a0606] relative overflow-hidden border-t border-[#222222]">
+    <section className="py-28 bg-[#0a0606] relative overflow-hidden border-t border-[#222222] w-full max-w-full">
       {/* Background Photography with Deep Red Vignette */}
       <div className="absolute inset-0 z-0">
         <Image

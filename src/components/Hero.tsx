@@ -7,9 +7,9 @@ import { GYM_INFO } from "@/data/gymData";
 
 export default function Hero() {
   return (
-    <section id="hero" className="relative min-h-[96vh] flex items-center justify-center pt-28 pb-16 overflow-hidden">
+    <section id="hero" className="relative min-h-[96vh] flex items-center justify-center pt-28 pb-16 overflow-hidden w-full max-w-full">
       {/* High-Clarity Background Photography */}
-      <div className="absolute inset-0 z-0">
+      <div className="absolute inset-0 z-0 overflow-hidden pointer-events-none">
         <Image
           src="/images/gym-interior.jpg"
           alt="Mega Gym Main Training Floor"
@@ -20,28 +20,28 @@ export default function Hero() {
         {/* Soft, focused gradient overlay preserving maximum background clarity */}
         <div className="absolute inset-0 bg-gradient-to-r from-black/85 via-black/45 to-black/15" />
         <div className="absolute inset-0 bg-gradient-to-t from-[#080808] via-transparent to-black/30" />
-        <div className="absolute top-0 left-0 w-96 h-96 bg-[#E5392F]/15 rounded-full blur-[130px] pointer-events-none" />
+        <div className="absolute top-0 left-0 w-96 h-96 bg-[#E5392F]/15 rounded-full blur-[130px] pointer-events-none max-w-full" />
       </div>
 
-      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full overflow-hidden">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
           {/* Main Hero Copy (Left) */}
           <div className="lg:col-span-8">
             {/* Status & Location Pill */}
-            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-black/80 border border-[#E5392F]/50 backdrop-blur-md mb-6 shadow-2xl">
-              <span className="w-2.5 h-2.5 rounded-full bg-[#E5392F] animate-ping" />
-              <span className="w-2 h-2 rounded-full bg-[#E5392F] -ml-4" />
-              <span className="text-xs font-bold uppercase tracking-widest text-[#E5392F]">
+            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-black/80 border border-[#E5392F]/50 backdrop-blur-md mb-6 shadow-2xl max-w-full">
+              <span className="w-2.5 h-2.5 rounded-full bg-[#E5392F] animate-ping flex-shrink-0" />
+              <span className="w-2 h-2 rounded-full bg-[#E5392F] -ml-4 flex-shrink-0" />
+              <span className="text-[11px] sm:text-xs font-bold uppercase tracking-widest text-[#E5392F] truncate">
                 AYOBO, LAGOS • OPEN MON – SUN
               </span>
-              <span className="text-gray-500">|</span>
-              <span className="text-xs text-gray-200 flex items-center gap-1 font-medium">
+              <span className="text-gray-500 hidden sm:inline">|</span>
+              <span className="text-xs text-gray-200 hidden sm:flex items-center gap-1 font-medium">
                 <MapPin className="w-3 h-3 text-[#E5392F]" /> 14 Camp Davies Rd
               </span>
             </div>
 
-            {/* Master Hero Headline with Crisp Drop Shadows */}
-            <h1 className="font-['Anton',sans-serif] text-5xl sm:text-7xl lg:text-8xl tracking-tight uppercase leading-[0.93] text-white drop-shadow-[0_4px_30px_rgba(0,0,0,0.95)] mb-6">
+            {/* Master Hero Headline with Responsive Sizing */}
+            <h1 className="font-['Anton',sans-serif] text-4xl sm:text-6xl lg:text-8xl tracking-tight uppercase leading-[0.95] text-white drop-shadow-[0_4px_30px_rgba(0,0,0,0.95)] mb-6 break-words">
               BUILT BY <span className="text-[#E5392F]">DISCIPLINE.</span>
               <br />
               POWERED BY <span className="text-white underline decoration-[#E5392F] decoration-4 underline-offset-8">YOU.</span>

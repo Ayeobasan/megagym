@@ -14,7 +14,7 @@ import WhatsAppButton from "@/components/WhatsAppButton";
 
 export default function HomePage() {
   return (
-    <main className="min-h-screen bg-[#080808] text-[#F2F2F2]">
+    <main className="min-h-screen bg-[#080808] text-[#F2F2F2] w-full max-w-full overflow-x-hidden relative">
       {/* Sleek, Non-Wrapping Sticky Navigation */}
       <Navbar />
 

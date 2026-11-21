@@ -5,7 +5,7 @@ import { GYM_INFO } from "@/data/gymData";
 
 export default function About() {
   return (
-    <section id="about" className="py-24 bg-[#0c0c0c] relative overflow-hidden border-y border-[#222222]">
+    <section id="about" className="py-24 bg-[#0c0c0c] relative overflow-hidden border-y border-[#222222] w-full max-w-full">
       {/* Background Red Accents */}
       <div className="absolute top-1/2 left-0 -translate-y-1/2 w-80 h-80 bg-[#E5392F]/15 rounded-full blur-[120px] pointer-events-none" />
       <div className="absolute bottom-0 right-0 w-80 h-80 bg-[#B92720]/15 rounded-full blur-[140px] pointer-events-none" />
